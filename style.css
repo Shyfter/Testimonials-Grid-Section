@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:hsl(210, 46%, 95%); ;
+    font-family: Barlow Semi Condensed ;
+    font-size: 13px;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translate(-50%);
+    background-color: red;
+    width: 85%;
+    padding-bottom: 40px;
+    background-color: transparent;
+    
+}
+
+.daniel, .jonathan, .jeanette, .patrick, .kira {
+    background-color:hsl(263, 55%, 52%) ;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 25px;
+}    
+
+/* Daniel Section */
+
+.daniel {
+    color: rgba(255,255,255, 0.7 );
+}
+
+
+img {
+    border-radius: 50%;
+    height: 20px;
+    border: 2px solid rgba(100, 100 , 100 , 0.5);
+}
+
+.daniel-about {
+    display: flex;
+}
+
+.name {
+    margin-left: 10px;
+    color: rgba(255,255,255, 0.7 );
+    font-size: 0.5rem;
+    
+}
+
+.txt {
+    color: rgba(255,255,255, 0.9 );
+    margin-top: 10px;
+}
+
+.mini-txt {
+font-size: 12px;
+margin-top: 10px;
+color: rgba(255,255,255, 0.4 );
+}
+
+.name p {
+    color: rgba(255,255,255, 0.4 );
+}
+
+/*Jonathan Section */
+
+.jonathan {
+    background-color:hsl(217, 19%, 35%);
+}
+
+
+.jonathan-about {
+    display: flex;
+}
+
+.name {
+    margin-left: 10px;
+    color: rgba(255,255,255, 0.7 );
+    font-size: 0.5rem;
+    
+}
+
+.txt {
+    color: rgba(255,255,255, 0.9 );
+    margin-top: 10px;
+}
+
+.name p {
+    color: rgba(255,255,255, 0.4 );
+}
+
+/* Jeanette's Section */
+
+.jeanette {
+    background-color: white;
+}
+
+.jeanette img {
+    border:0;
+}
+
+.jeanette .name {
+    color: rgba(72, 85, 106, 0.7 );
+}
+
+.jeanette .name p {
+    color: rgba(72, 85, 106, 0.4 ) ;
+}
+
+.jeanette .txt {
+    color: rgba(72, 85, 106, 1 ) ;
+}
+
+.jeanette .mini-txt {
+    color: rgba(72, 85, 106, 0.6 ) ;
+}
+
+/* Patrick's section */
+
+.patrick {
+    background-color: hsl(219, 29%, 14%) ;
+}
+
+.patrick img {
+    border-radius: 50%;
+    height: 20px;
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+/* kira's section */
+
+.kira {
+    background-color: white ;
+}
+
+.kira img {
+    border: 0;;
+}
+
+.kira {
+    background-color: white;
+}
+
+.kira .name {
+    color: rgba(72, 85, 106, 0.7 );
+}
+
+.kira .name p {
+    color: rgba(72, 85, 106, 0.4 ) ;
+}
+
+.kira .txt {
+    color: rgba(72, 85, 106, 1 ) ;
+}
+
+.kira .mini-txt {
+    color: rgba(72, 85, 106, 0.6 ) ;
+}
+
+@media (min-width:801px) {
+
+.container {
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.desktop-container {
+    position:relative;
+    left:50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    width: 85vw;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.left-section {
+    flex-basis:80%;
+}
+
+.kira {
+    flex-basis:20%;
+}
+
+.daniel, .jonathan, .jeanette, .patrick, .kira {
+    margin:0;
+    left:0%;
+    transform: translate(0%);
+    border-radius: 0;;
+} 
+
+.top-left {
+    display: flex;
+}
+
+.bottom-left {
+    display: flex;
+    margin-top: 20px;
+}
+
+.jonathan, .patrick, .kira {
+    margin-left: 15px;
+}
+
+
+}
+
+@media (min-width:1260px) {
+    .desktop-container{
+        width: 80%;
+    }
+}
